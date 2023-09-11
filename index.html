@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google -fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .fonts-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <header class="container mx-auto mt-9 ">
+        <nav class="bg-[#F85559] hidden rounded-full lg:p-2 lg:block">
+          <div class="navbar flex items-center justify-between">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </label>
+                <ul tabindex="0" class="flex  menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1">
+                  <li tabindex="0">
+                  </li>
+                  <li class="text-white"><a>Home</a></li>
+                  <li class="text-white"><a>About Us</a></li>
+                  <li class="text-white"><a>Shop</a></li>
+                  <li class="text-white"><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <div class="flex justify-center items-center lg:pl-56">
+                
+                  <!-- <img src="./images/logo.png" alt="" class="mr-2"> -->
+                  <h4 class="text-xl font-semiabold text-white">Fruit Burst</h4>
+                </a>
+              </div>
+            </div>
+            
+            <div class="navbar-end relative  ">
+              <input type="text" placeholder="Search here"   class="rounded-full   input input-bordered w-24 md:w-auto " />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="absolute right-5">
+                <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </nav>
+        <!-- for small device -->
+        <div class=" flex justify-between navbar bg-base-100 lg:hidden">
+          
+          <div class="flex-1  ">
+             <img src="./images/logo.png" alt="">
+           <h4 class="text-2xl font-semibold"> Fruit Burst</h4>
+          </div>
+          <div class="flex-1 navbar-end">
+            <button class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+          </div>
+          
+        </div>
+        <!-- banner part -->
+        <!-- banner start-->
+        <section class="mb-24">
+          <div class="carousel sm:min-h-screen min-w-full relative">
+              <div id="slide1" class="carousel-item relative w-full">
+                <div class="hero bg-[url('./asset/images/banner1.png')]" >
+                <div class="hero-overlay bg-opacity-10"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                      <h1 class="mb-5 text-4xl font-bold text-white">Exotic tastes at your doorstep</h1>
+                      <p class="mb-5 text-white">We supply highly quality organic products</p>
+                      <button class="bg-[#f85559] text-white w-28 h-12">Shop Now</button>
+                      </div>
+                  </div>
+              </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-10 right-10 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <div class="hero min-h-screen bg-[url('./asset/images/banner2.png')]" >
+                <div class="hero-overlay bg-opacity-10"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                          <h1 class="mb-5 text-4xl font-bold text-white">Exotic tastes at your doorstep</h1>
+                          <p class="mb-5 text-white">We supply highly quality organic products</p>
+                          <button class="bg-[#f85559] text-white w-28 h-12">Shop Now</button>
+                      </div>
+                  </div>
+              </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-10 right-10 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+            </div> 
+            <!-- bonus-part -->
+            <div class="flex justify-between text-center drop-shadow-lg bg-white p-8 w-10/12 ml-20 -mt-28  md:visible invisible absolute ">
+             <div>
+                <img src="./asset/images/fruit1.png" alt="">
+                <span>Strawberry</span>
+            </div>
+            <div>
+                <img src="./asset/images/fruit2.png" alt="">
+                <span>Orange</span>
+            </div>
+            <div>
+                <img src="./asset/images/fruit3.png" alt="">
+                <span>Mango</span>
+            </div>
+            <div>
+                <img src="./asset/images/fruit4.png" alt="">
+                <span>Strawberry</span>
+            </div>
+            <div>
+                <img src="./asset/images/fruit5.png" alt="">
+                <span>Mango</span>
+            </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+
+
+    <script src="./tailwind.config.js"></script>
+    
+</body>
+</html>
